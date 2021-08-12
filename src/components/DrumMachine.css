@@ -2,4 +2,11 @@
   background-color: #b3b3b3;
   display: flex;
   border: 0.3rem solid orange;
+  min-width: 320px;
+}
+
+@media screen and (max-width: 768px) {
+  .DrumMachine {
+    flex-direction: column;
+  }
 }
