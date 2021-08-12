@@ -38,35 +38,6 @@ export default function DrumKeys({ soundBank, bank, power, volume }) {
             );
           })}
       </div>
-      {/* <div className="ButtonGrid">
-        <div className="ButtonGridItem">
-          <span>A</span>
-        </div>
-        <div className="ButtonGridItem">
-          <span>A</span>
-        </div>
-        <div className="ButtonGridItem">
-          <span>A</span>
-        </div>
-        <div className="ButtonGridItem">
-          <span>A</span>
-        </div>
-        <div className="ButtonGridItem">
-          <span>A</span>
-        </div>
-        <div className="ButtonGridItem">
-          <span>A</span>
-        </div>
-        <div className="ButtonGridItem">
-          <span>A</span>
-        </div>
-        <div className="ButtonGridItem">
-          <span>A</span>
-        </div>
-        <div className="ButtonGridItem">
-          <span>A</span>
-        </div>
-      </div> */}
     </>
   );
 }
