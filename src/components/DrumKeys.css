@@ -1,19 +1,34 @@
-.DrumKeys {
-  max-width: 340px;
-}
-.DrumKeys .DrumKeysRow {
-  display: flex;
-  flex-wrap: wrap;
+.ButtonGrid {
+  min-width: 340px;
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  grid-template-columns: 30% 30% 30%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-gap: 10px;
 }
 
-.DrumKeys .DrumKeysRow .DrumKeysButton {
-  padding: 2rem;
-  margin: 1rem;
+.ButtonGrid .ButtonGridItem {
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #808080;
   box-shadow: black 3px 3px 5px;
   border: 1px solid black;
+  cursor: grab;
 }
 
-.DrumKeys .DrumKeysRow .DrumKeysButton:hover {
+.ButtonGrid .ButtonGridItem:hover {
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #a2a2a2;
+  box-shadow: black 3px 3px 5px;
+  border: 1px solid black;
 }

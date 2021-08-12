@@ -16,20 +16,21 @@ export default function DrumKeys({ soundBank, bank, power, volume }) {
         audioFile.play();
       }
     };
-  }, []);
+  }, [power, volume]);
 
   return (
-    <div className="DrumKeys">
-      <div className="DrumKeysRow">
+    <>
+      <div className="ButtonGrid">
         {currentBank &&
           currentBank.map((i) => {
             return (
               <div
-                className="DrumKeysButton drum-pad"
+                className="ButtonGridItem drum-pad"
+                id={i.id}
                 key={i.keyCode}
                 onClick={playElement}
               >
-                <audio className="clip" id={i.keyTrigger}>
+                <audio className="clip" id={i.keyTrigger} src={i.url}>
                   <source src={i.url}></source>
                 </audio>
                 {i.keyTrigger}
@@ -37,6 +38,35 @@ export default function DrumKeys({ soundBank, bank, power, volume }) {
             );
           })}
       </div>
-    </div>
+      {/* <div className="ButtonGrid">
+        <div className="ButtonGridItem">
+          <span>A</span>
+        </div>
+        <div className="ButtonGridItem">
+          <span>A</span>
+        </div>
+        <div className="ButtonGridItem">
+          <span>A</span>
+        </div>
+        <div className="ButtonGridItem">
+          <span>A</span>
+        </div>
+        <div className="ButtonGridItem">
+          <span>A</span>
+        </div>
+        <div className="ButtonGridItem">
+          <span>A</span>
+        </div>
+        <div className="ButtonGridItem">
+          <span>A</span>
+        </div>
+        <div className="ButtonGridItem">
+          <span>A</span>
+        </div>
+        <div className="ButtonGridItem">
+          <span>A</span>
+        </div>
+      </div> */}
+    </>
   );
 }
