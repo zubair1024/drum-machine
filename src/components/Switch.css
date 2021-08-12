@@ -1,0 +1,14 @@
+.Switch {
+  width: 50px;
+  height: 20px;
+  background-color: black;
+}
+
+.Switch .inner {
+  width: 23px;
+  height: 17px;
+  background: blue;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}

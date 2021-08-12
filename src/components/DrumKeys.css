@@ -1,0 +1,19 @@
+.DrumKeys {
+  max-width: 340px;
+}
+.DrumKeys .DrumKeysRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DrumKeys .DrumKeysRow .DrumKeysButton {
+  padding: 2rem;
+  margin: 1rem;
+  background-color: #808080;
+  box-shadow: black 3px 3px 5px;
+  border: 1px solid black;
+}
+
+.DrumKeys .DrumKeysRow .DrumKeysButton:hover {
+  background-color: #a2a2a2;
+}
