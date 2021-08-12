@@ -13,8 +13,13 @@ export default function Controls(props) {
     <div className="Controls">
       <Switch title="Power" value={power} setValue={setPower} />
       <Display content={displayContent} />
-      <Slider value={volume} setValue={setVolume} />
-      <Switch title="Bank" value={bank} setValue={setBank} />
+      <Slider value={volume} setValue={setVolume} disabledOn={!power} />
+      <Switch
+        title="Bank"
+        value={bank}
+        setValue={setBank}
+        disabledOn={!power}
+      />
     </div>
   );
 }

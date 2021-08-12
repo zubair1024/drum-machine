@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function Slider({ value, setValue }) {
+export default function Slider({ value, setValue, disabledOn }) {
   const onChange = (e) => {
-    const value = e.target.value;
-    setValue(value);
+    if (!disabledOn) {
+      const value = e.target.value;
+      setValue(value);
+    }
   };
 
   return (

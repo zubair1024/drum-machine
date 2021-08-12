@@ -3,12 +3,14 @@ import React from "react";
 import "./Switch.css";
 
 export default function Switch(props) {
-  const { value, setValue } = props;
+  const { value, setValue, disabledOn } = props;
 
   const { title = "Title" } = props;
 
   const toggleSwitch = () => {
-    setValue((prev) => !prev);
+    if (!disabledOn) {
+      setValue((prev) => !prev);
+    }
   };
 
   return (
